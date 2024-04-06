@@ -42,6 +42,7 @@ class ScanI2C
 #ifdef HAS_NCP5623
         NCP5623,
 #endif
+        AHT10
     } DeviceType;
 
     // typedef uint8_t DeviceAddress;

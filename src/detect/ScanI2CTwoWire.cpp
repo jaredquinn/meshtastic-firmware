@@ -257,6 +257,11 @@ void ScanI2CTwoWire::scanPort(I2CPort port)
                 }
                 break;
 
+            case AHT10_ADDR:
+                LOG_INFO("AHT10 sensor found at address 0x%x\n", (uint8_t)addr.address);
+                type = AHT10;
+                break;
+
             case INA_ADDR:
             case INA_ADDR_ALTERNATE:
             case INA_ADDR_WAVESHARE_UPS:
